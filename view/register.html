@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<title>Login</title>
+        
+	</head>
+	<body>
+		<div class="login">
+			<h1>Register</h1>
+			<form action="/create-user" method="post">
+				<label for="email">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="user_Email" placeholder="Email" id="user_Email" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="user_Password" placeholder="Password" id="password" onkeyup="check()"required>
+                <label for="confirm password">
+					<i class="fas fa-lock"></i>
+                    <span id='message'></span>
+				</label>
+				<input type="password" name="confirm_Password" placeholder="Confirm Password" id="confirm_Password" onkeyup="check()" required>
+				
+
+                <label for="firstname">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="text" name="first_Name" placeholder="Firstname" required>
+                <label for="lastname">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="text" name="last_Name" placeholder="Lastname" required>
+                
+                <input type="submit" value="Register">
+			</form>
+		</div>
+	</body>
+</html>
